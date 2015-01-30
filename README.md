@@ -9,8 +9,9 @@ This is my first attempt at creating my own profile. It's more about learning an
 
 My attempt to use & learn new technologies listed below:
 
-* [Twitter Bootstrap] - great UI boilerplate for modern web apps
-* [jQuery] - duh
+* Twitter Bootstrap
+* jQuery
+* Sublime
 
 
 ### Journal
