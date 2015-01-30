@@ -1,0 +1,23 @@
+{
+  "name": "portfolio.me",
+  "version": "0.0.0",
+  "homepage": "https://github.com/fuggfuggfugg/portfolio.me",
+  "authors": [
+    "nosmas"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.1.2",
+    "jquery": "~2.1.3"
+  }
+}
