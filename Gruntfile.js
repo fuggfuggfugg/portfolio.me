@@ -65,10 +65,6 @@ module.exports = function (grunt) {
           '.tmp/styles/{,*/}*.css',
           '<%= config.app %>/images/{,*/}*'
         ]
-      },
-      coffee: {
-        files: 'src/*.coffee',
-        tasks: ['coffee:compile']
       }
     },
 
@@ -289,11 +285,6 @@ module.exports = function (grunt) {
       }
     },
 
-    coffee: {
-      files: 'src/*.coffee',
-      tasks: ['coffee:compile']
-    },
-
     // By default, your `index.html`'s <!-- Usemin block --> will take care
     // of minification. These next options are pre-configured if you do not
     // wish to use the Usemin blocks.
@@ -431,6 +422,4 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
-
-  grunt.loadNpmTasks('grunt-contrib-coffee');
 };
