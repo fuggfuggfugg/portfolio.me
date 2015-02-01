@@ -25,7 +25,7 @@ h6 {
 .navbar-custom {
 	font-family: 'Roboto Slab',"Helvetica Neue",Helvetica,Arial,sans-serif;
 	background-color: #f8f8f8;
-	border-color: #e7e7e7; 
+	border-color: rgba(255,255,255,.3);
 
 	.navbar-brand {
 		color: #777; 
@@ -119,18 +119,15 @@ h6 {
     .navbar {
 		opacity: 0;
 		pointer-events: none;
+		-webkit-transition: opacity .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out,padding .5s ease-in-out;
+        transition: opacity .5s ease-in-out,padding .5s ease-in-out;
     }
 
     .top-nav-collapse {
         opacity: 1;
         pointer-events: auto;
-        -webkit-transition: opacity .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: opacity .5s ease-in-out,padding .5s ease-in-out;
-        transition: opacity .5s ease-in-out,padding .5s ease-in-out;
-    }
-
-    .navbar-custom.top-nav-collapse {
-        border-bottom: 1px solid rgba(255,255,255,.3);
+        
     }
 	
 }
