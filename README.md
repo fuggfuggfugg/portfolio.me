@@ -32,3 +32,10 @@ My attempt to use & learn new technologies listed below:
 
 * Spent awful amount of time trying to get coffeescript via grunt. Couldn't figure out the settings. Moved on. Setup FontAwesome, Favicons, trying Roboto, Jquery smooth scroll. 
 * Basic structure via bootstrap with 3 sections done.
+
+#####  1st Feb 2015
+
+* Smooth scroll, basic sections done, come transitioning
+* Autoprefixr not working. Created full yeoman app with --coffee and reapplied all changes.
+* Coffeescript works now. 
+
