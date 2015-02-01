@@ -118,10 +118,12 @@ h6 {
 @media(min-width:767px) {
     .navbar {
 		opacity: 0;
+		pointer-events: none;
     }
 
     .top-nav-collapse {
         opacity: 1;
+        pointer-events: auto;
         -webkit-transition: opacity .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: opacity .5s ease-in-out,padding .5s ease-in-out;
         transition: opacity .5s ease-in-out,padding .5s ease-in-out;
@@ -130,31 +132,40 @@ h6 {
     .navbar-custom.top-nav-collapse {
         border-bottom: 1px solid rgba(255,255,255,.3);
     }
+	
 }
 
 
 @media (max-width: 767px) {
-	.navbar-custom .navbar-nav .open .dropdown-menu > li > a {
-		color: #777; 
-	}
-	.navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
-		color: #333;
-		background-color: transparent; 
-	}
-	.navbar-custom .navbar-nav .open .dropdown-menu > .active > a, .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
-		color: #555;
-		background-color: #e7e7e7; 
-	}
-	.navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-		color: #ccc;
-		background-color: transparent; 
-	} 
-}
+	.navbar-custom{
+		.navbar-nav .open .dropdown-menu > li > a {
+			color: #777; 
+		}
 
+		.navbar-nav .open .dropdown-menu > li > a:hover, 
+		.navbar-nav .open .dropdown-menu > li > a:focus {
+			color: #333;
+			background-color: transparent; 
+		}
+
+		.navbar-nav .open .dropdown-menu > .active > a, 
+		.navbar-nav .open .dropdown-menu > .active > a:hover, 
+		.navbar-nav .open .dropdown-menu > .active > a:focus {
+			color: #555;
+			background-color: #e7e7e7; 
+		}
+
+		.navbar-nav .open .dropdown-menu > .disabled > a, 
+		.navbar-nav .open .dropdown-menu > .disabled > a:hover, 
+		.navbar-nav .open .dropdown-menu > .disabled > a:focus {
+			color: #ccc;
+			background-color: transparent; 
+		} 
+	}
+}
 
 .content-section{
 	display: table;
 	width: 100%;
 	height: 100%;
-
 }
