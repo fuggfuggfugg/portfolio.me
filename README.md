@@ -16,7 +16,7 @@ My attempt to use & learn new technologies listed below:
 
 ### Journal
 
-##### Day 1
+##### Day 1 - 29th Jan 2015
 
 * Setup node, npm, bower, yeoman, Live reload for chrome, ruby for SASS.
 * Adding sublime as shortcut by adding to the [powershell profile](http://www.howtogeek.com/50236/customizing-your-powershell-profile/) 
@@ -27,5 +27,8 @@ My attempt to use & learn new technologies listed below:
  >> grunt 
  >> grunt server
 ```
-   
 
+#####  31th Jan 2015
+
+* Spent awful amount of time trying to get coffeescript via grunt. Couldn't figure out the settings. Moved on. Setup FontAwesome, Favicons, trying Roboto, Jquery smooth scroll. 
+* Basic structure via bootstrap with 3 sections done.
