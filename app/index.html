@@ -35,6 +35,9 @@
   <link href='http://fonts.googleapis.com/css?family=Roboto:500,400|Roboto+Condensed|Roboto+Slab' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/theme.css">
+  <!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" href="ie9-and-down.css" />
+  <![endif]-->
   <!-- endbuild -->
 </head>
 <body  id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -50,7 +53,7 @@
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
             <i class="fa fa-bars"></i>
           </button>
-          <a class="navbar-brand navbar-brand-scroll-disable page-scroll hidden-xs" href="#page-top">
+          <a class="navbar-brand  page-scroll hidden-xs" href="#page-top">
             <img src="images/logo.svg" class="pf-logo" alt="">
           </a>
           <a class="navbar-brand page-scroll visible-xs" href="#page-top">
@@ -64,7 +67,7 @@
             <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
             <li class="hidden-xs">              
               <a href="#page-top" class="page-scroll">
-                  <i class="fa fa-lg fa-angle-double-up"></i>
+                  <i class="fa fa-lg fa-fw fa-angle-double-up"></i>
               </a>
             </li>
             <li>
@@ -85,19 +88,21 @@
     <!-- Intro -->
     <section id="intro" class="container-fluid intro">
       <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div class="col-sm-3">
-            <div class="brand-image">
-            </div>  
-          </div> 
-          <div class="col-sm-9">
-            <div class="intro-content">
-              <h1>Samson Khisty</h1>
-              <div>
-                <p>Front End Developer</p>
-                <p>With a focus toward UX,UI & Visual Design </p>
-                <p>Passionate about WWW, Soccer, Lifting</p>
-                <p>Startup Engineer at <a href="www.eightspokes.com">8Spokes</a> </p>
+        <div class="col-md-8 col-md-offset-2 col-xs-12">
+          <div class="row flex-vertical-center">
+            <div class="col-md-4 text-center">
+              <div class="pic-me">
+                <img src="images/sam1.png"  class="img-responsive" alt="Samson Khisty pic">
+              </div>
+            </div> 
+            <div class="col-md-8">
+              <div class="intro-content">
+                <h1>Samson Khisty</h1>
+                <div>
+                  <p>Startup Engineer at <a href="www.eightspokes.com">EightSpokes</a> </p>
+                  <p>With a focus toward UI/UX & Visual Design </p>
+                  <p>Passionate about WWW, Soccer, Lifting</p>
+                </div>
               </div>
             </div>
           </div>
@@ -108,7 +113,7 @@
     <!-- Expertise Section -->
     <section id="expertise" class="container-fluid content-section">
       <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
+        <div class="col-md-8 col-md-offset-2 col-xs-12">
           <h1>Here lies the expertise section</h1>
           make bg with transparency code etc 
           Strengths, Interests, exposure
@@ -119,7 +124,7 @@
     <!-- Playground Section -->
     <section id="playground" class="container-fluid content-section">
       <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
+        <div class="col-md-8 col-md-offset-2 col-xs-12">
           <h1>Here is my playground, codepen, etc etc</h1>
         </div>
       </div> 
@@ -128,7 +133,7 @@
     <!-- Ping me -->
     <section id="ping" class="container-fluid">
       <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
+        <div class="col-md-8 col-md-offset-2 col-xs-12">
           <h2> drop a line section</h2>
         </div>
       </div>
