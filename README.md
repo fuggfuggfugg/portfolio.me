@@ -39,3 +39,9 @@ My attempt to use & learn new technologies listed below:
 * Autoprefixr not working. Created full yeoman app with --coffee and reapplied all changes.
 * Coffeescript works now. 
 
+#####  2nd Feb 2015
+
+* Landing page almost there. 
+* Responsive fixes
+* svg images in a hexagon shape. 
+
