@@ -45,3 +45,8 @@ My attempt to use & learn new technologies listed below:
 * Responsive fixes
 * svg images in a hexagon shape. 
 
+#####  7th Feb 2015
+
+* font change
+* image overlay
+* push to heroku
