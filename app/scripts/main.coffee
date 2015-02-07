@@ -19,4 +19,10 @@ $ ->
   return
 
 
-
+$(".pic-me").mouseover (e)->
+	debugger;
+	$(e.currentTarget).find("img.orig").css("height",$(e.currentTarget).find("img.graphic").outerHeight(true))
+	return
+.mouseout (e) ->
+	$(e.currentTarget).find("img.orig").css("height", $(e.currentTarget).find("img.graphic").outerHeight(true))
+	return 
