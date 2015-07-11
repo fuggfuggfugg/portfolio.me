@@ -52,6 +52,10 @@ img.bg-texture{
   text-align: center;
 }
 
+text-right{
+  text-align: right;
+}
+
 .navbar-custom {
   font-family: 'gloria hallelujah', 'Roboto Slab',"Helvetica Neue",Helvetica,Arial,sans-serif;
   background-color: #F7F7F5;
@@ -398,22 +402,21 @@ color: rgb(170, 126, 85);
 
 
 .hex-container{
-  width: 191px; 
-  height: 142px;
-  position: relative;
+  display: inline-block;
+  text-align: center;
 
-  .hex{
+  .hex,
+  .hex-v{
     background: rgb(240, 0, 0);
     -webkit-mask-image: url(/images/hex.png);
     -webkit-mask-origin: center center;
     -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: 74px;
-    height: 74px; 
-    width: 74px; 
+    -webkit-mask-size: 128px;
+    height: 128px; 
+    width: 128px; 
     -webkit-transform: scale(1);
     transform: scale(1);
     text-align: center;
-    position: absolute;
     font-weight: 200;
     letter-spacing: 1px;
     font-size: 0.9em;
@@ -425,6 +428,10 @@ color: rgb(170, 126, 85);
       transform: translate(-50%, -50%);
       position: absolute;
     }
+  }
+  
+  .hex-v{
+    -webkit-mask-image: url(/images/hex-v.png);
   }
 
   .hex1{
