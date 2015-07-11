@@ -318,8 +318,11 @@ module.exports = function (grunt) {
       dist: {
         files: {
           '<%= config.dist %>/styles/main.css': [
-            '.tmp/styles/{,*/}*.css',
-            '<%= config.app %>/styles/{,*/}*.css'
+            '.tmp/styles/main.css',
+            '.tmp/styles/theme.css'
+          ],
+          '<%= config.dist %>/styles/tabs.css': [
+            '.tmp/styles/tabs.css'
           ]
         }
       }
