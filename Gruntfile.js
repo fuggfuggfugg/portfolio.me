@@ -452,11 +452,11 @@ module.exports = function (grunt) {
     'useminPrepare',
     'concurrent:dist',
     'autoprefixer',
-    'concat',
+    // 'concat',
     'cssmin',
     'uglify',
     'copy:dist',
-    // 'rev',
+    'rev',
     'usemin',
     'htmlmin'
   ]);
