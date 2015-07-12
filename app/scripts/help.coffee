@@ -34,7 +34,6 @@ $ ->
 			insize : 1      #number of indent characters per indent
 		}
 		pd = prettydiff options  # returns and array: [beautified, report]
-		debugger;
 		# Add JSON escape characters
 		outputHTML = pd[0]
 		$("#outputHTML").val  json_quote(outputHTML)
