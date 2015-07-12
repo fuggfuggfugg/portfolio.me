@@ -54,3 +54,22 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+
+#normal,
+#outputHTML,
+#outputRaw{
+  width: 100%;
+}
+
+.action-buttons-container{
+  text-align: center;
+}
+
+#btnProcess{
+}
+
+#btnProcess,
+#btnPrettify{
+  width: 100% ;
+}
