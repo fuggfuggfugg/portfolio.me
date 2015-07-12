@@ -40,12 +40,12 @@ $ ->
 		$("#outputHTML").val  json_quote(outputHTML)
 
 		# STEP 2: Use the output of minified html, add a space between > < and then string html tags
-		div = document.createElement("div")
-		div.innerHTML = outputHTML.replace(/></g,'> <')
-		text = div.textContent || div.innerText || ""
+		# div = document.createElement("div")
+		# div.innerHTML = outputHTML.replace(/></g,'> <')
+		text = outputHTML.replace(/<(?:.|\n)*?>/gm, '');
 
 		# Finally, replace spaces more than 2 with a single space
-		$("#outputRaw").val json_quote(text.replace(/\s{2,10}/g, ' '))
+		$("#outputRaw").val json_quote(text.replace(/\s{2,10}/g, ' '));
 
 		return
 
