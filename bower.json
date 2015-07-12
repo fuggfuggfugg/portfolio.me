@@ -6,7 +6,5 @@
     "bootstrap": "~3.3.2",
     "velocity": "~1.2.1"
   },
-  "devDependencies": {
-    "prettydiff": "~1.12.12"
-  }
+  "devDependencies": {}
 }
