@@ -34,14 +34,14 @@ $ ->
 			insize : 1      #number of indent characters per indent
 		}
 		pd = prettydiff options  # returns and array: [beautified, report]
-		
+		debugger;
 		# Add JSON escape characters
-		outputHTML = json_quote pd[0]
-		$("#outputHTML").val outputHTML
+		outputHTML = pd[0]
+		$("#outputHTML").val  json_quote(outputHTML)
 
 		# STEP 2: Use the output of minified html, add a space between > < and then string html tags
 		div = document.createElement("div")
-		div.innerHTML = $("#outputHTML").val().replace(/></g,'> <')
+		div.innerHTML = json_quote(outputHTML).replace(/></g,'> <')
 		text = div.textContent || div.innerText || ""
 
 		# Finally, replace spaces more than 2 with a single space
