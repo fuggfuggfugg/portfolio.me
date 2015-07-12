@@ -323,6 +323,9 @@ module.exports = function (grunt) {
           ],
           '<%= config.dist %>/styles/tabs.css': [
             '.tmp/styles/tabs.css'
+          ],
+          '<%= config.dist %>/styles/help.css': [
+            '.tmp/styles/help.css'
           ]
         }
       }
