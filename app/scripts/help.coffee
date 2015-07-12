@@ -33,16 +33,11 @@ $ ->
 			inchar : "\t",  #indent character
 			insize : 1      #number of indent characters per indent
 		}
-
 		pd = prettydiff options  # returns and array: [beautified, report]
 		
-		debugger;
 		# Add JSON escape characters
 		outputHTML = json_quote pd[0]
-
 		$("#outputHTML").val outputHTML
-
-
 
 		# STEP 2: Use the output of minified html, add a space between > < and then string html tags
 		div = document.createElement("div")
@@ -56,6 +51,15 @@ $ ->
 
 	$('#btnPrettify').bind 'click', (event) ->
 		str = $("#normal").val()
+		
+
+		t = str.length
+		# also remove double quotes from beginning and the end
+		if  ( str.charAt(0)=='"') 
+			str = str.substring(1,t--);
+		if  ( str.charAt(--t)=='"') 
+			str = str.substring(0,t);
+
 		#Options can be viewed at:
 		#http://prettydiff.com/documentation.xhtml#function_properties
 		options   = {
@@ -68,7 +72,8 @@ $ ->
 		}
 
 		pd = prettydiff(options); # returns and array: [beautified, report]
-		$("#outputHTML").val(pd[0])
+		$("#outputHTML").val pd[0].replace(/[/\\*]/g, "")
+		$("#outputRaw").val ""
 		return
 
 
