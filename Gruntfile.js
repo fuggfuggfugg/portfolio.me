@@ -55,7 +55,8 @@ module.exports = function (grunt) {
       },
       livereload: {
         options: {
-          livereload: '<%= connect.options.livereload %>'
+          livereload: '<%= connect.options.livereload %>',
+          protocol: 'https'
         },
         files: [
           '<%= config.app %>/{,*/}*.html',
@@ -250,7 +251,7 @@ module.exports = function (grunt) {
       options: {
         dest: '<%= config.dist %>'
       },
-      html: '<%= config.app %>/index.html'
+      html: '<%= config.app %>/*.html'
     },
 
     // Performs rewrites based on rev and the useminPrepare configuration
@@ -318,8 +319,14 @@ module.exports = function (grunt) {
       dist: {
         files: {
           '<%= config.dist %>/styles/main.css': [
-            '.tmp/styles/{,*/}*.css',
-            '<%= config.app %>/styles/{,*/}*.css'
+            '.tmp/styles/main.css',
+            '.tmp/styles/theme.css'
+          ],
+          '<%= config.dist %>/styles/tabs.css': [
+            '.tmp/styles/tabs.css'
+          ],
+          '<%= config.dist %>/styles/help.css': [
+            '.tmp/styles/help.css'
           ]
         }
       }
